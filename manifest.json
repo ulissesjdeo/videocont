@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "YouTube Time Updater",
+  "version": "1.0",
+  "description": "Updates the URL with the current time of a YouTube video every 5 seconds",
+  "permissions": [
+    "tabs",
+    "*://*.youtube.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
