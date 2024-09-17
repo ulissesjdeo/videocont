@@ -1,15 +1,17 @@
 {
-  "manifest_version": 2,
-  "name": "YouTube Time Updater",
+  "manifest_version": 3,
+  "name": "Videocont",
   "version": "1.0",
-  "description": "Updates the URL with the current time of a YouTube video every 5 seconds",
+  "description": "Updates the URL with the current time of a YouTube video",
   "permissions": [
-    "tabs",
-    "*://*.youtube.com/*"
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://*.youtube.com/*"
   ],
   "content_scripts": [
     {
-      "matches": ["*://*.youtube.com/*"],
+      "matches": ["https://*.youtube.com/*"],
       "js": ["content.js"]
     }
   ]
