@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Videocont",
   "version": "1.0",
-  "description": "Updates the URL with the current time of a YouTube video",
+  "description": "Updates the URL with the current time of your YouTube video",
   "permissions": [
     "tabs"
   ],
